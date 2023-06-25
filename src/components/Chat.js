@@ -16,7 +16,7 @@ const Chat = () => {
         <p>This Channel Is For Company Wide Chatter</p>
       </div>
       <hr className="" />
-      <Messages data={data} />
+      <Messages className="flex-grow-0 overflow-y-auto" data={data} />
 
       <Input newMessage={newMessage} />
     </div>

@@ -54,7 +54,7 @@ const Input = ({ newMessage }) => {
   };
 
   return (
-    <div className="searchbar position-relative">
+    <div className="searchbar position-fixed bottom-0">
       <input
         value={input}
         onChange={handleChange}

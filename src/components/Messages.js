@@ -3,7 +3,8 @@ import Message from "./Message.js";
 
 const Messages = ({ data }) => {
   return (
-    <div className="messages d-flex flex-column-reverse ">
+    <div className="messages-container">
+    <div className="messages d-flex flex-column-reverse h-100">
       {data.map((message) => (
         <Message
           time={message.time}
@@ -13,6 +14,7 @@ const Messages = ({ data }) => {
           color={message.color}
         />
       ))}
+    </div>
     </div>
   );
 };

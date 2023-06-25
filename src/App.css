@@ -57,8 +57,14 @@ hr {
   margin-left: 10% !important;
   opacity: 0.5 !important;
 }
+
 .messages {
-  height: 78%;
+  overflow-y: scroll;
+}
+
+.messages-container{
+  max-height: 84vh!important;
+  padding-bottom: 4%;
 }
 .emoji {
   font-size: 30px;
@@ -109,4 +115,8 @@ hr {
   top: 7.7%;
   border-radius: 50%;
   border: 3px solid white;
+}
+
+.searchbar{
+  width: 75%;
 }
