@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+  border-right: 1px solid black;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-img {
+  height: 60px;
+  width: 60px;
+  border: black;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.name-header {
+  width: 65% !important;
+}
+.converstation div:nth-child(1) {
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  background-color: rgb(194, 190, 190);
+  color: black;
+}
+.converstation:nth-child(2) {
+  background-color: #629df4;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.converstation:nth-child(2) span {
+  color: white;
+}
+.plus-symbol {
+  height: 25px;
+  width: 25px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
+.plus-symbol span {
+  padding-bottom: 2px;
+}
+.introduction p {
+  color: grey;
+}
+.typingmsg {
+  border-radius: 20px;
+  border: none;
+  border: 1px solid grey;
+  width: 94%;
+}
+hr {
+  width: 80%;
+  margin-left: 10% !important;
+  opacity: 0.5 !important;
+}
+.messages {
+  height: 78%;
+}
+.emoji {
+  font-size: 30px;
+  position: relative;
+  right: 90px;
+  bottom: -1px;
+}
+.send {
+  font-size: 30px;
+  position: absolute;
+  right: 60px;
+  bottom: 2px;
+}
+.chat {
+  background: #edf1f5;
+}
+.name-icon {
+  border: black;
+  border-radius: 50%;
+  background-color: rgb(245, 123, 22);
+  color: white;
+}
+.name {
+  margin-top: -20%px;
+  margin-left: 10px;
+}
+.message {
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message span {
+  margin-bottom: 0.5%;
+}
+.message-box {
+  background: white;
+  margin-left: 70px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  margin-top: -10px;
+}
+.online{
+  height: 18px;
+  width: 18px;
+  background-color: rgb(33, 169, 33);
+  position: absolute;
+  left: 3.4%;
+  top: 7.7%;
+  border-radius: 50%;
+  border: 3px solid white;
 }
